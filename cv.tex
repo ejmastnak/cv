@@ -1,0 +1,135 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{changepage}
+\usepackage[shortlabels]{enumitem}
+\usepackage{microtype, xspace}
+\usepackage{hyperref}
+
+\newcommand{\vmargin}{2cm}
+\newcommand{\hmargin}{2.5cm}
+\geometry{top=\vmargin,
+    bottom=\vmargin,
+    left=\hmargin,
+    right=\hmargin}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+
+\pagenumbering{gobble}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist{topsep=0pt, itemsep=0pt}
+
+% BEGIN CUSTOM MACROS
+% --------------------------------------------- %
+\newcommand{\rangesep}{to\xspace}  % for date ranges
+\renewcommand{\date}[1]{\textit{#1}}
+\newcommand{\location}[1]{\textit{#1}}
+
+\newcommand{\heading}[1]{
+\makebox[0pt][l]{\Large \sc \hspace{2pt}#1}
+\rule[-0.7ex]{\columnwidth}{0.5pt}\vspace{0.5ex}
+}
+
+\newcommand{\subheading}[1]{{\bfseries #1}}
+\newcommand{\generalInfoSkip}{\vspace{0.3ex}}
+\newcommand{\subheadSkip}{\vspace{0.7ex}}
+% --------------------------------------------- %
+% END CUSTOM MACROS
+
+
+% BEGIN CUSTOM ENVIRONMENTS
+% --------------------------------------------- %
+\newenvironment{mysection}[1]
+{\vspace{2.5ex}
+\heading{#1}
+\begin{adjustwidth}{0.3cm}{0cm}}
+{\end{adjustwidth} }
+% --------------------------------------------- %
+% END CUSTOM ENVIRONMENTS
+
+\begin{document}
+
+    \textbf{\LARGE Elijan J. Mastnak}
+
+    \vspace{1.5ex}
+    3 Evelyn Place \hfill Email: \href{mailto:ejmastnak@gmail.com}{\texttt{ejmastnak@gmail.com}}
+
+    Princeton, NJ 05840 \hfill Webpage: \href{https://ejmastnak.github.io/}{\texttt{ejmastnak.github.io}}
+
+
+    \begin{mysection}{General Information}
+
+        \textbf{Citizenship:} United States and Slovenia (EU member state)
+
+        \generalInfoSkip
+        \textbf{Languages:} English, Slovene, Spanish
+
+        \generalInfoSkip
+        \textbf{Skills include:} clearly-communicated technical writing; teaching introductory through undergraduate physics, mathematics, and programming; {\LaTeX}, including real-time mathematical typesetting; scientific Python (\texttt{NumPy}, \texttt{Matplotlib}, \texttt{SciPy}); vector graphics (\texttt{Tikz}; Inkscape); shell scripting and Unix utilities; Vim/NeoVim; Git and GitHub; Java.
+
+    \end{mysection}
+
+    \begin{mysection}{Education}
+        \subheading{University of Ljubljana, Faculty of Math and Physics} \hfill \location{Ljubljana, Slovenia}
+
+        \textit{Bachelor of Science in Physics} \hfill \date{October 2018 \rangesep September 2021}
+            
+        \subheadSkip
+        \subheading{Newport Harbor High School} \hfill \location{Newport Beach, CA}
+
+        \textit{International Baccalaureate Diploma} \hfill \date{September 2014 \rangesep June 2017}
+
+    \end{mysection}
+
+    \begin{mysection}{Employment}
+        \subheading{University of Ljubljana, Faculty of Math and Physics} \hfill \location{Ljubljana, Slovenia}
+
+        \vspace{0.1ex}
+        \textit{Private Contractor} \hfill \date{June 2021 \rangesep present}
+        \vspace{0.1ex}
+
+        Commissioned to typeset and translate the first-year physics curriculum to English using recorded Slovene video lectures, with the aim of making the university's physics program more approachable to foreign-exchange students.
+
+        \subheadSkip
+        \vspace{0.3ex}
+        \subheading{TMG BMC} \hfill \location{Ljubljana, Slovenia}
+
+        \textit{Data Analyst and Software Developer} \hfill \date{August 2019 \rangesep September 2021}
+
+        \begin{itemize}
+        
+            \item Analysis of 1D biomechanical time-series data from TMG, EMG, load cell, and MC sensors: detecting and quantifying twitch potentiation; quantifying contraction time, maximum muscle displacement, and rate of force development.
+
+            Techniques include: numerical integration and differentiation, Lagrange interpolation, curve fitting, iterative methods for nonlinear equations, peak detection, filtering, statistical parametric mapping.
+
+            \item Developed cross-platform user interface (in Java using Swing) to make above-described analysis accessible to non-technical users.
+
+            \item Regularly worked with professional (including Olympic) athletes, mostly in track and field.
+        
+        \end{itemize}
+
+        \subheadSkip
+        \subheading{Newport Harbor High School} \hfill \location{Newport Beach, CA}
+
+        Two positions: \textit{Academic Tutor} and \textit{Soccer Coach} \hfill \date{August 2017 \rangesep June 2018}
+
+        \begin{itemize}
+        
+            \item Tutor in physics, math and programming for Newport Harbor High School's AVID program, which provides school-sponsored after-school tutoring to students.
+
+            \item Assistant coach in the boy's soccer program for the academic year (as an alumnus and former varsity captain); head coach of the Frosh-Soph team in the 2017-18 winter season.
+        
+        \end{itemize}
+
+        \subheadSkip
+        \subheading{Self-Employed} \hfill \location{Newport Beach, CA}
+
+        \vspace{0.1ex}
+        \textit{Private Tutor} \hfill \date{September 2017 \rangesep June 2018}
+        \vspace{0.1ex}
+
+        Worked as a private tutor in math and physics in the Newport Beach and Costa Mesa area; served students from Newport Harbor and Corona del Mar High School.
+
+    \end{mysection}
+
+\end{document}
