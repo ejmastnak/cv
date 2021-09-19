@@ -33,6 +33,7 @@
 \newcommand{\subheading}[1]{{\bfseries #1}}
 \newcommand{\generalInfoSkip}{\vspace{0.3ex}}
 \newcommand{\subheadSkip}{\vspace{0.7ex}}
+\newcommand{\contentIndent}{\hspace{1em}}
 % --------------------------------------------- %
 % END CUSTOM MACROS
 
@@ -44,6 +45,11 @@
 \heading{#1}
 \begin{adjustwidth}{0.3cm}{0cm}}
 {\end{adjustwidth} }
+
+\newenvironment{entry}
+\par
+{\vspace{0.1ex}}
+{}
 % --------------------------------------------- %
 % END CUSTOM ENVIRONMENTS
 
@@ -73,6 +79,13 @@
         \subheading{University of Ljubljana, Faculty of Math and Physics} \hfill \location{Ljubljana, Slovenia}
 
         \textit{Bachelor of Science in Physics} \hfill \date{October 2018 \rangesep September 2021}
+
+        \vspace{0.1ex}
+        \begin{entry}
+            \hspace{1em} Thesis: ``End-to-End Classification for Discovery of New Processes in High-Energy Physics''
+
+            \hspace{1em} Thesis webpage: \url{https://ejmastnak.github.io/seminar/seminar.html}
+        \end{entry}
             
         \subheadSkip
         \subheading{Newport Harbor High School} \hfill \location{Newport Beach, CA}
@@ -86,15 +99,18 @@
 
         \vspace{0.1ex}
         \textit{Private Contractor} \hfill \date{June 2021 \rangesep present}
-        \vspace{0.1ex}
-
-        Commissioned to typeset and translate the first-year physics curriculum to English using recorded Slovene video lectures, with the aim of making the university's physics program more approachable to foreign-exchange students.
+        \begin{entry}
+            Commissioned to typeset and translate the first-year physics curriculum to English using recorded Slovene video lectures, with the aim of making the university's physics program more approachable to foreign-exchange students.    
+        \end{entry}
 
         \subheadSkip
         \vspace{0.3ex}
-        \subheading{TMG BMC} \hfill \location{Ljubljana, Slovenia}
+        \subheading{TMG-BMC Ltd.} \hfill \location{Ljubljana, Slovenia}
 
         \textit{Data Analyst and Software Developer} \hfill \date{August 2019 \rangesep September 2021}
+
+        \vspace{0.1ex}
+        TMG-BMC is biomechanics and kinesiology company specializing in high-end, non-invasive sensors for quantifying muscle function in professional athletes. Webpage: \url{https://www.tmg-bodyevolution.com/}
 
         \begin{itemize}
         
@@ -126,9 +142,9 @@
 
         \vspace{0.1ex}
         \textit{Private Tutor} \hfill \date{September 2017 \rangesep June 2018}
-        \vspace{0.1ex}
-
-        Worked as a private tutor in math and physics in the Newport Beach and Costa Mesa area; served students from Newport Harbor and Corona del Mar High School.
+        \begin{entry}
+            Worked as a private tutor in math and physics in the Newport Beach and Costa Mesa area; served students from Newport Harbor and Corona del Mar High School.
+        \end{entry}
 
     \end{mysection}
 
