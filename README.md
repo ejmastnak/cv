@@ -1,5 +1,5 @@
 # CV
-The LaTeX source files for Elijan Mastnak's CV. Compile with `pdflatex -pdf cv.tex`.
+The LaTeX source files for Elijan Mastnak's CV. Compile with `pdflatex cv.tex`.
 
 The contents of `cv.pdf` and `cv.tex` are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
