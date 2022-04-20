@@ -1,7 +1,13 @@
 # CV
-The LaTeX source files for Elijan Mastnak's CV.
+
+LaTeX source files for Elijan Mastnak's CV.
 To compile, change into the `src` directory and run `pdflatex cv.tex`.
-An up-to-date PDF version can be found at [ejmastnak.github.io/cv/cv.pdf](https://ejmastnak.github.io/cv/cv.pdf).
+
+### Want a PDF?
+
+See  [ejmastnak.github.io/cv/cv.pdf](https://ejmastnak.github.io/cv/cv.pdf) for an up-to-date, pre-compiled PDF.
+
+### License
 
 The contents of `cv.tex` are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
