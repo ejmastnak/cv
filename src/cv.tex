@@ -7,11 +7,11 @@
 \usepackage{hyperref}
 
 \newcommand{\hmargin}{2.5cm}
-\geometry{top=2cm,
-    bottom=1.25cm,% lower bottom margin to accommodate source code URL
+\geometry{top=2.5cm,
+    bottom=2.5cm,
     left=\hmargin,
     right=\hmargin}
-\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
 
 \pagenumbering{gobble}
 \pagestyle{empty}
@@ -23,6 +23,7 @@
 \newcommand{\rangesep}{to\xspace}  % for date ranges
 \renewcommand{\date}[1]{\textit{#1}}
 \newcommand{\location}[1]{\textit{#1}}
+\newcommand{\contentType}[1]{\textit{#1}}
 
 \newcommand{\heading}[1]{
 \makebox[0pt][l]{\Large \sc \hspace{2pt}#1}
@@ -78,7 +79,10 @@
         working on a \texttt{systemd} Linux system;
         Git and GitHub; Vim/Neovim.
 
-    \end{mysection}
+        \generalInfoSkip
+        \textbf{Evidence of skills:} See the \hyperlink{s:things_made}{Things I've Made} section on the next page.
+
+    \end{mysection} 
 
     \begin{mysection}{Education}
         \subheading{University of Ljubljana, Faculty of Math and Physics} \hfill \location{Ljubljana, Slovenia}
@@ -152,6 +156,44 @@
         \textit{Private Tutor in Math and Physics} \hfill \date{September 2017 \rangesep June 2018}
         \begin{entry}
             Worked as a private tutor in math and physics in the Newport Beach and Costa Mesa area; served students from Newport Harbor and Corona del Mar High School.
+        \end{entry}
+
+    \end{mysection}
+
+    \begin{mysection}{\hypertarget{s:things_made}{Things I've Made}}
+        \subheading{Real-time LaTeX Using (Neo)Vim} \hfill \contentType{Tutorial series/technical writing}
+
+        \begin{entry}
+            \hspace{1em} \textls[-5]{A 7-article guide to supercharged mathematical typesetting} \href{https://github.com/lervag/vimtex/#vimtex-on-the-web}{officially endorsed} \textls[-5]{by the VimTeX project}.
+
+            \hspace{1em} See it here: \url{https://ejmastnak.github.io/tutorials/vim-latex/intro.html}
+        \end{entry}
+            
+        \subheadSkip
+
+        \subheading{Solved exercises and lecture notes} \hfill \contentType{Educational writing}
+        \begin{entry}
+            \hspace{1em} 1500+ pages of solved exercises and lecture notes in undergraduate physics, typeset in LaTeX
+
+            \hspace{1em} See it here: \url{https://ejmastnak.github.io/fmf.html}
+        \end{entry}
+
+        \subheadSkip
+
+        \subheading{Classical physics---a textbook} \hfill \contentType{Educational writing}
+        \begin{entry}
+            \hspace{1em} An undergraduate mechanics textbook to accompany the first-year FMF course \textit{Klasična fizika}.
+
+            \hspace{1em} See (a sample) here: \url{https://ejmastnak.github.io/klf/klf-sample.pdf}
+        \end{entry}
+
+        \subheadSkip
+
+        \subheading{Digital Hilbert transformer ``from scratch''} \hfill \contentType{Technical writing/signal processing}
+        \begin{entry}
+            \hspace{1em} A (near) real-time FIR Hilbert transformer and bandpass filter using Numpy and PyAudio.
+
+            \hspace{1em} See it here: \url{https://ejmastnak.github.io/projects/hilbert/hilbert.html}
         \end{entry}
 
     \end{mysection}
