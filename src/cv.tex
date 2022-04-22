@@ -7,11 +7,11 @@
 \usepackage{hyperref}
 
 \newcommand{\hmargin}{2.5cm}
-\geometry{top=2cm,
-    bottom=1.25cm,% lower bottom margin to accommodate source code URL
+\geometry{top=2.5cm,
+    bottom=2.5cm,
     left=\hmargin,
     right=\hmargin}
-\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+\hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
 
 \pagenumbering{gobble}
 \pagestyle{empty}
@@ -23,10 +23,11 @@
 \newcommand{\rangesep}{to\xspace}  % for date ranges
 \renewcommand{\date}[1]{\textit{#1}}
 \newcommand{\location}[1]{\textit{#1}}
+\newcommand{\contentType}[1]{\textit{#1}}
 
 \newcommand{\heading}[1]{
 \makebox[0pt][l]{\Large \sc \hspace{2pt}#1}
-\rule[-0.7ex]{\columnwidth}{0.5pt}\vspace{0.5ex}
+\rule[-0.7ex]{\columnwidth}{0.5pt}\vspace{1.0ex}
 }
 
 \newcommand{\subheading}[1]{{\bfseries #1}}
@@ -58,11 +59,10 @@
 
     \vspace{1.5ex}
     Email: \href{mailto:ejmastnak@gmail.com}{\texttt{ejmastnak@gmail.com}}\\
-    Webpage: \href{https://ejmastnak.github.io/}{\texttt{ejmastnak.github.io}}\\
-    GitHub: \href{https://github.com/ejmastnak}{\texttt{github.com/ejmastnak}}
+    Webpage: \href{https://ejmastnak.github.io/}{\texttt{www.ejmastnak.github.io}}\\
+    GitHub: \href{https://github.com/ejmastnak}{\texttt{www.github.com/ejmastnak}}
 
     \begin{mysection}{General Information}
-
         \textbf{Citizenship:} United States and Slovenia (an EU member state)
 
         \generalInfoSkip
@@ -77,7 +77,39 @@
         Bash scripting and the Unix core utilities;
         working on a \texttt{systemd} Linux system;
         Git and GitHub; Vim/Neovim.
+    \end{mysection} 
 
+    \begin{mysection}{Things I've Made}
+        \subheading{Real-time LaTeX Using (Neo)Vim} \hfill \contentType{Tutorial series/technical writing}
+        \begin{entry}
+            \hspace{1em} \textls[-5]{A 7-article guide to supercharged mathematical typesetting} \href{https://github.com/lervag/vimtex/#vimtex-on-the-web}{officially endorsed} \textls[-5]{by the VimTeX project}.
+
+            \hspace{1em} See it here: \url{https://ejmastnak.github.io/tutorials/vim-latex/intro.html}
+        \end{entry}
+            
+        \subheadSkip
+        \subheading{Solved exercises and lecture notes} \hfill \contentType{Educational writing}
+        \begin{entry}
+            \hspace{1em} 1500+ pages of solved exercises and lecture notes in undergraduate physics, typeset in LaTeX
+
+            \hspace{1em} See it here: \url{https://ejmastnak.github.io/fmf.html}
+        \end{entry}
+
+        \subheadSkip
+        \subheading{Arch Linux Post-Installation Tutorials} \hfill \contentType{Technical writing}
+        \begin{entry}
+            \hspace{1em} Bite-sized tutorials for a functional work environment after a minimal install of Arch Linux.
+
+            \hspace{1em} See it here: \url{https://ejmastnak.github.io/notes/arch/about.html}
+        \end{entry}
+
+        \subheadSkip
+        \subheading{Digital Hilbert transformer ``from scratch''} \hfill \contentType{Technical writing/signal processing}
+        \begin{entry}
+            \hspace{1em} A (near) real-time FIR Hilbert transformer and bandpass filter using Numpy and PyAudio.
+
+            \hspace{1em} See it here: \url{https://ejmastnak.github.io/projects/hilbert/hilbert.html}
+        \end{entry}
     \end{mysection}
 
     \begin{mysection}{Education}
@@ -96,11 +128,9 @@
         \subheading{Newport Harbor High School} \hfill \location{Newport Beach, CA}
 
         \textit{International Baccalaureate Diploma} \hfill \date{September 2014 \rangesep June 2017}
-
     \end{mysection}
 
     \begin{mysection}{Employment}
-
         \subheading{TMG-BMC Ltd.} \hfill \location{Ljubljana, Slovenia}
 
         \textit{Programmatic Analysis of Time-Series Biomechanics Data} \hfill \date{August 2019 \rangesep present}
@@ -116,13 +146,16 @@
 
             \item Developed cross-platform user interface (in Java using Swing) to make above-described analysis accessible to non-technical users.
 
-            \item Trained to use TMG, EMG, load cell, and MC sensors
+            \item Trained to use TMG, EMG, load cell, and MC sensors.
 
             \item Regularly worked with professional (including Olympic) athletes, mostly in track and field.
         
         \end{itemize}
+    \end{mysection}
 
-        \subheadSkip
+    \newpage
+    \begin{mysection}{Employment \large{(continued)}}
+
         \subheading{University of Ljubljana, Faculty of Math and Physics} \hfill \location{Ljubljana, Slovenia}
 
         \vspace{0.1ex}
@@ -153,10 +186,9 @@
         \begin{entry}
             Worked as a private tutor in math and physics in the Newport Beach and Costa Mesa area; served students from Newport Harbor and Corona del Mar High School.
         \end{entry}
-
-    \end{mysection}
+    \end{mysection} 
 
     \vfill
-    \null \hspace{1em} {\small \textit{Source code available at \textup{\href{https://github.com/ejmastnak/cv}{\texttt{github.com/ejmastnak/cv}}} under a \textup{\texttt{CC BY-NC-SA 4.0}} license.}}
+    \null \hspace{1em} {\small \textit{Source code available at \textup{\href{https://github.com/ejmastnak/cv}{\texttt{github.com/ejmastnak/cv}}} under the \textup{CC BY-NC-SA 4.0} license.}}
 
 \end{document}
