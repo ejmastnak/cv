@@ -18,6 +18,32 @@
 \setlength{\parindent}{0pt}
 \setlist{topsep=0pt, itemsep=0pt}
 
+% Footer configuration
+%--------------------------------------------%
+\usepackage{fancyhdr, extramarks}
+\pagestyle{fancy}
+
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small \textit{Source code available at \textup{\href{https://github.com/ejmastnak/cv}{\texttt{github.com/ejmastnak/cv}}} under the \textup{CC BY-NC-SA 4.0} license.}}
+
+% \renewcommand{\sectionmark}[1]{
+%     \markboth{\thesection. \ #1}
+%     {\noexpand\firstsubsectiontitle}
+%     \global\firstsubsectionmarktrue}
+% \renewcommand{\subsectionmark}[1]{
+%     \markright{\thesubsection. \, #1}
+%     \iffirstsubsectionmark
+% \edef\firstsubsectiontitle{\thesubsection. \, #1}
+% \fi
+% \global\firstsubsectionmarkfalse}
+% \newif\iffirstsubsectionmark
+% \def\firstsubsectiontitle{}
+
+\setlength{\headheight}{14pt} 
+%--------------------------------------------%
+% End footer configuration
+
 % BEGIN CUSTOM MACROS
 % --------------------------------------------- %
 \newcommand{\rangesep}{to\xspace}  % for date ranges
@@ -187,46 +213,5 @@
             Worked as a private tutor in math and physics in the Newport Beach and Costa Mesa area; served students from Newport Harbor and Corona del Mar High School.
         \end{entry}
     \end{mysection} 
-
-    \begin{mysection}{\hypertarget{s:things_made}{Things I've Made}}
-        \subheading{Real-time LaTeX Using (Neo)Vim} \hfill \contentType{Tutorial series/technical writing}
-
-        \begin{entry}
-            \hspace{1em} \textls[-5]{A 7-article guide to supercharged mathematical typesetting} \href{https://github.com/lervag/vimtex/#vimtex-on-the-web}{officially endorsed} \textls[-5]{by the VimTeX project}.
-
-            \hspace{1em} See it here: \url{https://ejmastnak.github.io/tutorials/vim-latex/intro.html}
-        \end{entry}
-            
-        \subheadSkip
-
-        \subheading{Solved exercises and lecture notes} \hfill \contentType{Educational writing}
-        \begin{entry}
-            \hspace{1em} 1500+ pages of solved exercises and lecture notes in undergraduate physics, typeset in LaTeX
-
-            \hspace{1em} See it here: \url{https://ejmastnak.github.io/fmf.html}
-        \end{entry}
-
-        \subheadSkip
-
-        \subheading{Classical physics---a textbook} \hfill \contentType{Educational writing}
-        \begin{entry}
-            \hspace{1em} An undergraduate mechanics textbook to accompany the first-year FMF course \textit{Klasična fizika}.
-
-            \hspace{1em} See (a sample) here: \url{https://ejmastnak.github.io/klf/klf-sample.pdf}
-        \end{entry}
-
-        \subheadSkip
-
-        \subheading{Digital Hilbert transformer ``from scratch''} \hfill \contentType{Technical writing/signal processing}
-        \begin{entry}
-            \hspace{1em} A (near) real-time FIR Hilbert transformer and bandpass filter using Numpy and PyAudio.
-
-            \hspace{1em} See it here: \url{https://ejmastnak.github.io/projects/hilbert/hilbert.html}
-        \end{entry}
-
-    \end{mysection}
-
-    \vfill
-    \null \hspace{1em} {\small \textit{Source code available at \textup{\href{https://github.com/ejmastnak/cv}{\texttt{github.com/ejmastnak/cv}}} under the \textup{CC BY-NC-SA 4.0} license.}}
 
 \end{document}
