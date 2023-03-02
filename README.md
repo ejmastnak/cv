@@ -5,7 +5,7 @@ To compile, change into the `src` directory and run `pdflatex cv.tex`.
 
 ### Want a PDF?
 
-See  [ejmastnak.github.io/cv/cv.pdf](https://ejmastnak.github.io/cv/cv.pdf) for an up-to-date, pre-compiled PDF.
+See [ejmastnak.com/resume.pdf](https://ejmastnak.com/resume.pdf) for an up-to-date, pre-compiled PDF.
 
 ### License
 
