@@ -4,6 +4,7 @@
 \usepackage{changepage}
 \usepackage[shortlabels]{enumitem}
 \usepackage{microtype, xspace}
+\usepackage{datetime}
 \usepackage{hyperref}
 
 \newcommand{\hmargin}{2.5cm}
@@ -12,6 +13,8 @@ bottom=2.0cm,
 left=\hmargin,
 right=\hmargin}
 \hypersetup{colorlinks=true, linkcolor=cyan, urlcolor=cyan}
+
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
 
 \pagenumbering{gobble}
 \pagestyle{empty}
@@ -72,7 +75,8 @@ right=\hmargin}
     \vspace{1.5ex}
     Webpage: \href{https://ejmastnak.com/}{\texttt{www.ejmastnak.com}}\\
     GitHub: \href{https://github.com/ejmastnak}{\texttt{www.github.com/ejmastnak}}\\
-    Email: \href{mailto:ejmastnak@gmail.com}{\texttt{ejmastnak@gmail.com}}
+    Email: \href{mailto:ejmastnak@gmail.com}{\texttt{ejmastnak@gmail.com}}\\
+    Last CV update: \monthyeardate\today
 
     \begin{mysection}{General Information}
         \textbf{Citizenship:} United States and Slovenia (an EU member state)
